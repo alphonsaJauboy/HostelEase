@@ -9,7 +9,6 @@ import {
   CreditCard,
   LogOut,
   Building2,
-  RefreshCw,
   Plus
 } from "lucide-react";
 
@@ -321,18 +320,6 @@ export default function AdminDashboard() {
             <h2>{tab}</h2>
             <p>Hostel administration panel</p>
           </div>
-
-          <button
-            className="icon-btn"
-            onClick={loadData}
-            title="Refresh dashboard"
-            disabled={refreshing}
-          >
-            <RefreshCw
-              size={18}
-              className={refreshing ? "spin" : ""}
-            />
-          </button>
         </header>
 
         {/* MESSAGES */}

@@ -42,14 +42,6 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1000"
             alt="Modern hostel room"
           />
-
-          <div className="image-label">
-            <BedDouble size={20}/>
-            <div>
-              <strong>Comfortable Rooms</strong>
-              <small>Designed for student living</small>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -60,31 +52,32 @@ export default function Home() {
           <p>Simple, transparent and convenient hostel services.</p>
         </div>
 
-        <div className="feature-grid">
-          <Feature
-            icon={<BedDouble/>}
-            title="Room Booking"
-            desc="Explore available rooms and submit accommodation requests."
-          />
+        
+<div className="feature-grid">
+  <Feature
+    icon={<BedDouble/>}
+    title="Comfortable Accommodation"
+    desc="Choose from well-maintained rooms with suitable sharing options to meet your accommodation needs."
+  />
 
-          <Feature
-            icon={<ShieldCheck/>}
-            title="Secure Access"
-            desc="One login with automatic role-based student and administrator access."
-          />
+  <Feature
+    icon={<Wifi/>}
+    title="WiFi Connectivity"
+    desc="Stay connected with internet access for learning, communication, and entertainment."
+  />
 
-          <Feature
-            icon={<CreditCard/>}
-            title="Online Fee Management"
-            desc="Manage hostel fee payments and payment receipts."
-          />
+  <Feature
+    icon={<ShieldCheck/>}
+    title="Safe & Secure Living"
+    desc="Enjoy a secure hostel environment with safety and student well-being as priorities."
+  />
+   <Feature
+    icon={<BookOpen/>}
+    title="Study-Friendly Environment"
+    desc="Enjoy a peaceful environment that supports learning, concentration, and academic growth."
+  />
+</div>
 
-          <Feature
-            icon={<Building2/>}
-            title="Room Management"
-            desc="Efficient room allocation and availability tracking."
-          />
-        </div>
       </section>
 
       <section className="amenities section">
@@ -95,9 +88,9 @@ export default function Home() {
 
         <div className="amenity-grid">
           <span><Wifi/> WiFi</span>
-          <span><Utensils/> Dining</span>
           <span><BookOpen/> Study Area</span>
           <span><ShieldCheck/> Security</span>
+        <span><BedDouble/> Comfortable Rooms</span>
         </div>
       </section>
 

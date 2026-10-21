@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Home, BedDouble, ClipboardList, CreditCard,
-  User, LogOut, Building2, RefreshCw
+  User, LogOut, Building2
 } from "lucide-react";
 import api from "../services/api";
 import { useAuth } from "../context/AuthContext";
@@ -187,14 +187,6 @@ export default function StudentDashboard() {
             <h2>{tab}</h2>
             <p>Welcome back, {user?.full_name}</p>
           </div>
-
-          <button
-            className="icon-btn"
-            onClick={loadData}
-            disabled={busy}
-          >
-            <RefreshCw size={18} />
-          </button>
         </header>
 
         {error && (
